@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <meta charset="UTF-8">
+	    <title>FlexText</title>
+	    <script src="../lib/jquery-1.11.1.min.js"></script>
+	    <script src="../dest/jquery.flextext.min.js"></script>
+	    <style>
+	    	body{
+		    	font-family: 'Arial';
+		    	color: #303030;
+		    	background: #f1f1f1;
+	    	}
+		    .wrapper{
+			    width: 960px;
+			    margin: 0 auto;
+		    }
+		    .section{
+		    	float: left;
+			    width: 300px;
+			    margin-right: 20px;
+			    padding: 16px;
+			    border: 1px solid #ccc;
+			    -webkit-box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+					background: #fff;
+					min-height: 17em;
+					margin-bottom: 20px;
+		    }
+		    p{
+			    font-size: 18px;
+			    line-height: 20px;
+		    }
+	    </style>
+	</head>
+	<body>
+		<section class="wrapper">
+			<section class="section">
+				<header>
+					<h2>Lorem Ipsum</h2>
+				</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+				</article>
+			</section>
+			<section class="section">
+				<header>
+					<h2>Lorem Ipsum</h2>
+				</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+				</article>
+			</section>
+			<section class="section">
+				<header>
+					<h2>Lorem Ipsum</h2>
+				</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+				</article>
+			</section>
+			<section class="section">
+				<header>
+					<h2>Lorem Ipsum</h2>
+				</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+				</article>
+			</section>
+			<section class="section">
+				<header>
+					<h2>Lorem Ipsum</h2>
+				</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+				</article>
+			</section>
+			<section class="section">
+				<header>
+					<h2>orem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
+				</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+				</article>
+			</section>
+		</section>
+	</body>
+	<script src="//localhost:3111/livereload.js"></script>
+	<script>
+		(function(){
+			
+			'use strict';
+			
+			$('.section p').flextext({
+				100: [{0: ['20px', '22px']}],
+				200: [{0: ['16px', '18px']}],
+				295: [{0: ['13px', '18px']}]
+			});
+				
+			
+			$('.section h2').flextext({
+				50: [{0: ['20px', '22px']}],
+			});
+			
+		})();
+	</script>
+	
+</html>
