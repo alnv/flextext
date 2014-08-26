@@ -6,7 +6,7 @@ module.exports = function(grunt){
 			options: {
 				mangle: true,
 				compress: true,
-				sourceMap: 'dest/flextext.map',
+				sourceMap: 'dest/flextext.map'
 			},
 			target: {
 				src: 'src/flextext.js',
