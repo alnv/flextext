@@ -2,6 +2,11 @@
 	
 	$.fn.flextext = function(opt){
 		
+		//helper
+		function trim(str){
+			return str.replace(/^\s+|\s+$/g, '');
+		}
+		
 		
 		var size = [];
 		var options = opt;
@@ -64,10 +69,8 @@
 		
 		function countEl(e){
 			
-			var strl = $(e)
-				.text()
-				.trim()
-				.length;
+			var strl = $(e).text()
+			strl = trim(strl).length;
 			
 			return strl;
 			
